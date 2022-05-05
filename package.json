@@ -2,9 +2,9 @@
   "name": "tweets-server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha 'src/test/*.js' --recursive --timeout 60000 --exit"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +14,7 @@
     "chai-http": "^4.3.0",
     "cors": "^2.8.5",
     "express": "^4.18.1",
+    "mocha": "^10.0.0",
     "twitter-api-v2": "^1.12.0"
   }
 }
